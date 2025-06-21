@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>후원으로 드림카 사기 | Dreamcar Donation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .donate-button {
+      background-color: #ffcc00;
+      border: none;
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .donate-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ffcc00aa;
+    }
+
+    .progress-container {
+      background: #333;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 2rem auto;
+      height: 30px;
+      width: 80%;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 12%;
+      background-color: #ffcc00;
+      text-align: center;
+      line-height: 30px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .donor-section {
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .donor-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tier {
+      margin-bottom: 1.5rem;
+    }
+
+    .tier h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #ffcc00;
+    }
+
+    .tier ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tier li {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .lang-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+
+    .message-section {
+      margin-top: 3rem;
+      padding: 1rem;
+      background-color: #111;
+      border-radius: 10px;
+    }
+
+    .message-section h3 {
+      color: #ffcc00;
+      margin-bottom: 1rem;
+    }
+
+    .message {
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    .message strong {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <button class="lang-toggle" onclick="toggleLang()">English</button>
+  <div class="container">
+    <h1 id="title">⭐️ 천 원 후원하고 나만의 드림카를 경험해보세요! ⭐️</h1>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar">₩1,200,000 / ₩10,000,000</div>
+    </div>
+    <p id="description">
+      차를 좋아하고 드라이브를 즐기는 사람들이라면<br />
+      한 번쯤은 생각하셨을 "나만의 드림카"<br />
+      생각만 해도 가슴이 두근거리지 않나요?<br /><br />
+      면허를 따고 난 후 처음 자동차를 접했을 때,<br />
+      저는 왠지 모를 해방감과 자유를 느꼈습니다.<br />
+      그때부터 제 마음속에는 나만의 드림카가 자리잡기 시작했죠.<br /><br />
+      하지만 아르바이트와 직장으로는 평생을 벌어도 사기 힘듭니다.<br />
+      그래서 저는 여러분과 함께 이 꿈을 이루고 싶습니다.<br /><br />
+      함께 후원하고, 함께 꿈을 이루는 드림카 프로젝트.<br />
+      여러분의 응원은 큰 힘이 됩니다.
+    </p>
+    <button class="donate-button" onclick="alert('후원 시스템이 곧 열립니다!')">
+      ⭐️ 지금 후원하기 | Donate Now
+    </button>
+
+    <div class="donor-section">
+      <h2 id="donorTitle">✨ 후원자 명단 ✨</h2>
+
+      <div class="tier">
+        <h3>₩1,000 / $1 </h3>
+        <ul>
+          <li>김가영 - "작지만 응원합니다!" (₩1,000)</li>
+          <li>john_d - "Let's ride together!" ($1)</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>₩10,000 / $10 </h3>
+        <ul>
+          <li>박민수 - "꿈을 향해!" (₩10,000)</li>
+          <li>sophia_lee - "Never stop chasing dreams." ($10)</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>₩100,000 / $100 </h3>
+        <ul>
+          <li>이하준 - "진심으로 응원해요." (₩100,000)</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>₩1,000,000 / $1K </h3>
+        <ul>
+          <li>JANE KIM - "Drive that dream." ($1K)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleLang() {
+      const isKorean = document.documentElement.lang === 'ko';
+      document.documentElement.lang = isKorean ? 'en' : 'ko';
+
+      document.getElementById('title').innerHTML = isKorean ?
+        '⭐️ Support My Dreamcar with Just $1! ⭐️' :
+        '⭐️ 천 원 후원하고 나만의 드림카를 경험해보세요! ⭐️';
+
+      document.getElementById('description').innerHTML = isKorean ?
+        `If you love cars and driving, you’ve probably dreamed of owning your own dream car.<br /><br />
+        The first time I drove a car after getting my license, I felt true freedom.<br />
+        That’s when I began dreaming of a car of my own.<br /><br />
+        But with a part-time job and entry-level salary, it’s almost impossible.<br />
+        That’s why I started this project — to make it happen, with your support.<br /><br />
+        Let’s build something unforgettable together.` :
+        `차를 좋아하고 드라이브를 즐기는 사람들이라면<br />
+        한 번쯤은 생각하셨을 "나만의 드림카"<br /><br />
+        면허를 따고 난 후 처음 자동차를 접했을 때,<br />
+        저는 왠지 모를 해방감과 자유를 느꼈습니다.<br />
+        그때부터 제 마음속에는 나만의 드림카가 자리잡기 시작했죠.<br /><br />
+        하지만 아르바이트와 직장으로는 평생을 벌어도 사기 힘듭니다.<br />
+        그래서 저는 여러분과 함께 이 꿈을 이루고 싶습니다.<br /><br />
+        함께 후원하고, 함께 꿈을 공유하는 드림카 프로젝트.<br />
+        여러분의 응원은 큰 힘이 됩니다.`;
+
+      document.getElementById('donorTitle').innerText = isKorean ? '✨ Donor List ✨' : '✨ 후원자 명단 ✨';
+    }
+  </script>
+</body>
+<iframe src="https://giphy.com/embed/NBs1mJNW8qCPrsauIN" width="480" height="456" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SadHamsterio-hammy-sad-hamster-sadhamster-NBs1mJNW8qCPrsauIN">via GIPHY</a></p>
+</html>
+
